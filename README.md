@@ -29,4 +29,12 @@ Die Beispiele sind untergliedert in:
 * channel
 * dirfiles
 * iota       
-* likeEnum   
+* likeEnum
+
+## Error handling
+tbd
+
+## Testing 
+tbd
+
+## System-related
