@@ -15,6 +15,6 @@ func main() {
 
 	fmt.Println("let *z = 20")
 	*z = 20                     // setzt den Inhalt der Speicheradresse auf 20
-	fmt.Println("*z = v =", *z) // damit ist nun a auch 20
+	fmt.Println("*z = v =", *z) // damit ist nun v auch 20
 
 }
