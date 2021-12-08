@@ -45,6 +45,7 @@ func main() {
 //
 // Es ist eine Konvention, dass ein Interface mit nur einer Methode den Namen der Methode mit angehängtem “-er” bekommt.
 // Ein Interface, dessen einzige Funktion String() heißt, erhält also den Namen Stringer.
+// Im Beispiel müsste das Interface daher eigentlich Perimeterer heißen
 //
 // Das leere Interface interface{} wird von allen Typen erfüllt.
 //
