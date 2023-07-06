@@ -5,18 +5,22 @@ import (
 )
 
 func main() {
-	// Demo for Loops
+    // Demo for Loops
 	fmt.Println("Demo for Loops:")
-
-	// for Schleife
-	fmt.Println("\nfor-Schleife:")
+        //-----------------------------------
+    	// for-Schleife (go style)
+        //-----------------------------------
+		fmt.Println("\nfor-Schleife:")
 	fmt.Println("for i := 1; i <= 3; i++ {...}")
 	summe := 0
+	
 	for i := 1; i <= 3; i++ {
 		summe += i
 		fmt.Println("i, summe:", i, summe)
 	}
-
+	//-----------------------------------
+    	//  while-artige Schleife in Go	
+        //-----------------------------------
 	fmt.Println("\nwhile-Schleife")
 	fmt.Println("for i<4 {...}")
 	var i = 0 // while
@@ -79,4 +83,15 @@ func main() {
 		i = i + 1
 		fmt.Println(i * 10)
 	}
+
+	for i := 0; i < 10; i++ {
+    		if i%2 == 0 {
+        	continue // überspringt die aktuelle Iteration und fährt mit der nächsten fort
+    		}
+    		if i > 5 {
+        	break // beendet die gesamte Schleife
+    		}
+    	fmt.Println(i)
+	}
+
 }
