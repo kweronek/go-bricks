@@ -11,7 +11,7 @@ import "fmt"
 		var f0, f1 int = 0, 1			// Startwerte
 		for {
 			funcChannel <- f0			// sende f0 an funcChannel
-			f0, f1 = f1, f0+f1			// Berechnung
+			f0, f1 = f1, f0 + f1			// Berechnung
 		}
 	}
 
@@ -21,7 +21,7 @@ import "fmt"
 		myChannel := make(chan int)		// öffnet myChannel (bidir)
 		defer close(myChannel)			// schließt den myChannel nach Programmende
 
-		go fibonacci(myChannel)			// startet die fibonacci als thread
+		go fibonacci(myChannel)			// startet die Funktion fibonacci als thread
 
 		var res int
 		for i:=0; i<25; i++ {
