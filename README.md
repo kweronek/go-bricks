@@ -1,4 +1,4 @@
-  # go-bricks
+# go-bricks
 Dieses Repository gibt ein Set von verschiedenen kleinen Go-Programmen. An diesen lassen sich leicht die Syntax und Funktionsweise von go-Sprachelementen erkennen. Darüber hinaus können die Beispiel as Templates eingesetzt werden.
 Die Beispiele sind untergliedert in:
 * Elementary
