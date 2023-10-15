@@ -1,5 +1,5 @@
 # Programmierbausteine für Go
-Dieses Repository gibt ein Set von verschiedenen kleinen Go-Programmen. An diesen lassen sich leicht die Syntax und Funktionsweise von go-Sprachelementen erkennen. Darüber hinaus können die Beispiel as Templates eingesetzt werden.
+Dieses Repository gibt ein Set von verschiedenen kleinen Go-Programmen. An diesen lassen sich leicht die Syntax und Funktionsweise von go-Sprachelementen erkennen. Darüber hinaus können die Beispiel als Templates eingesetzt werden.
 Die Beispiele sind untergliedert in:
 * Elementary
 * Foundation
