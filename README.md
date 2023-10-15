@@ -5,7 +5,7 @@ Die Beispiele sind untergliedert in:
 * Foundation
 * Advanced
 
-## Elementary
+**1. Elementary**  
 * helloWorld
 * strings
 * arrays    
@@ -14,7 +14,7 @@ Die Beispiele sind untergliedert in:
 * switchcase 
 * timestamps
 
-## Foundation
+**2. Foundation**
 * func
 * struct
 * methods 
@@ -23,7 +23,7 @@ Die Beispiele sind untergliedert in:
 * maps    
 * files   
 
-## Advanced
+**3. Advanced**
 * interfaces 
 * slices
 * channel
@@ -190,7 +190,7 @@ Um die Testabdeckung zu überprüfen, kann Go einen Bericht erstellen, der anzei
 
 Das Testen in Go ist durch die Sprachdesign-Entscheidungen stark vereinfacht und in den Entwicklungsworkflow integriert. Durch die Nutzung der eingebauten Testing-Werkzeuge, kombiniert mit Best Practices und externen Bibliotheken, können Entwickler robusten, zuverlässigen und effizienten Code schreiben. Das Testen sollte immer ein integraler Bestandteil des Entwicklungsprozesses in jedem Go-Projekt sein.
 
-## System-relevante Befehle
+# System-relevante Befehle
 Wenn man mit Go arbeitet, gibt es eine Reihe von systemrelevanten Befehlen, die sowohl für die Entwicklung als auch für die Verwaltung von Go-Anwendungen wichtig sind. Diese Befehle werden über das `go`-Werkzeug ausgeführt.
 
 Hier ist eine Einführung in die systemrelevanten Befehle in Go:
