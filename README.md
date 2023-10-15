@@ -112,7 +112,83 @@ Durch solche benutzerdefinierten Fehlerstrukturen kann man zusätzliche Kontexti
 
 Go's Ansatz zur Fehlerbehandlung unterscheidet sich deutlich von dem vieler anderer Sprachen. Durch die Förderung expliziter Fehlerüberprüfungen hilft Go Entwicklern, robusten, wartbaren und verständlichen Code zu schreiben. Fehler werden nicht leichtfertig übersehen, und Entwickler sind stets im Bilde über mögliche Problemstellen ihrer Anwendungen. Dieser Ansatz mag zunächst ungewöhnlich erscheinen, hat sich aber in der Praxis als effektiv und effizient erwiesen.
 ## Testing 
-tbd
+**Einführung in das Testing mit Go**
+
+**1. Einleitung**
+
+Go, oder oft als "Golang" bezeichnet, ist nicht nur für seine einfache Syntax und effiziente Ausführung bekannt, sondern auch für seine eingebauten Testing-Funktionen. Testing ist ein zentrales Element jeder modernen Softwareentwicklung, und Go bietet den Entwicklern solide Werkzeuge, um den Code zu testen und die Softwarequalität zu sichern. Diese Einführung führt Sie durch die Grundlagen des Testens in Go.
+
+**2. Grundlegende Teststruktur**
+
+Ein Test in Go ist eine Funktion, die in einer speziellen *_test.go Datei lebt. Der Testname beginnt mit `Test` gefolgt vom Namen der Funktion, die getestet wird:
+
+```go
+func TestMeineFunktion(t *testing.T) {
+    // Ihr Testcode hier
+}
+```
+
+Der Parameter `t` ist von Typ `*testing.T` und wird für Teststeuerung und -berichterstattung verwendet.
+
+**3. Asserts und Überprüfungen**
+
+Go’s Standardbibliothek für Tests enthält keine traditionellen "Assert"-Funktionen. Stattdessen überprüfen Sie Bedingungen mit normalen Go-Code und nutzen die `t.Error()` oder `t.Fatal()` Methoden für Fehler:
+
+```go
+result := MeineFunktion()
+if result != erwartet {
+    t.Errorf("Erwartet %v, erhalten %v", erwartet, result)
+}
+```
+
+**4. Tabellengesteuerte Tests**
+
+Eine gängige Praxis in Go ist die Verwendung von tabellengesteuerten Tests, um verschiedene Eingaben und erwartete Ausgaben in einer Tabelle zu definieren:
+
+```go
+func TestDividieren(t *testing.T) {
+    tests := []struct{
+        inputA, inputB, erwartet int
+    }{
+        {10, 5, 2},
+        {12, 4, 3},
+        // Weitere Testfälle
+    }
+
+    for _, tt := range tests {
+        result := Dividieren(tt.inputA, tt.inputB)
+        if result != tt.erwartet {
+            t.Errorf("Für %v und %v erwartet %v, erhalten %v", tt.inputA, tt.inputB, tt.erwartet, result)
+        }
+    }
+}
+```
+
+**5. Mocking und Stubs**
+
+Mocking ist eine Technik, bei der echte Abhängigkeiten durch gefälschte Versionen (Mocks) ersetzt werden. Es gibt mehrere Bibliotheken in Go's Ökosystem, wie `gomock` oder `testify`, die Mocking unterstützen. Diese erlauben es, Verhalten und Erwartungen für externe Abhängigkeiten, wie Datenbankaufrufe, zu definieren.
+
+**6. Benchmarking**
+
+Go bietet auch Unterstützung für Leistungs-Benchmarks. Benchmark-Funktionen leben in *_test.go Dateien, genau wie Tests, beginnen aber mit `Benchmark`:
+
+```go
+func BenchmarkMeineFunktion(b *testing.B) {
+    for i := 0; i < b.N; i++ {
+        MeineFunktion()
+    }
+}
+```
+
+Der Code im Benchmark wird so oft wie angegeben durch den Wert von `b.N` ausgeführt, und Go misst, wie lange es dauert.
+
+**7. Testabdeckung**
+
+Um die Testabdeckung zu überprüfen, kann Go einen Bericht erstellen, der anzeigt, welche Teile des Codes von Tests getroffen wurden. Dies wird über den Befehl `go test -cover` erreicht.
+
+**8. Fazit**
+
+Das Testen in Go ist durch die Sprachdesign-Entscheidungen stark vereinfacht und in den Entwicklungsworkflow integriert. Durch die Nutzung der eingebauten Testing-Werkzeuge, kombiniert mit Best Practices und externen Bibliotheken, können Entwickler robusten, zuverlässigen und effizienten Code schreiben. Das Testen sollte immer ein integraler Bestandteil des Entwicklungsprozesses in jedem Go-Projekt sein.
 
 ## System-related
 tbd
