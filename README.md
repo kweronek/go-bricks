@@ -190,5 +190,53 @@ Um die Testabdeckung zu überprüfen, kann Go einen Bericht erstellen, der anzei
 
 Das Testen in Go ist durch die Sprachdesign-Entscheidungen stark vereinfacht und in den Entwicklungsworkflow integriert. Durch die Nutzung der eingebauten Testing-Werkzeuge, kombiniert mit Best Practices und externen Bibliotheken, können Entwickler robusten, zuverlässigen und effizienten Code schreiben. Das Testen sollte immer ein integraler Bestandteil des Entwicklungsprozesses in jedem Go-Projekt sein.
 
-## System-related
-tbd
+## System-relevante Befehle
+Wenn man mit Go arbeitet, gibt es eine Reihe von systemrelevanten Befehlen, die sowohl für die Entwicklung als auch für die Verwaltung von Go-Anwendungen wichtig sind. Diese Befehle werden über das `go`-Werkzeug ausgeführt.
+
+Hier ist eine Einführung in die systemrelevanten Befehle in Go:
+
+1. **go run**
+   - **Verwendung:** Führt Go-Quellcode direkt aus, ohne eine ausführbare Datei zu erstellen.
+   - **Beispiel:** `go run main.go`
+
+2. **go build**
+   - **Verwendung:** Kompiliert Go-Code in eine ausführbare Binärdatei. Es erstellt eine ausführbare Datei im aktuellen Verzeichnis.
+   - **Beispiel:** `go build main.go`
+
+3. **go install**
+   - **Verwendung:** Kompiliert und installiert ein Go-Binärprogramm oder eine Bibliothek. Für Binärprogramme werden die Binärdateien im `$GOPATH/bin`-Verzeichnis abgelegt.
+   - **Beispiel:** `go install mypackage`
+
+4. **go get**
+   - **Verwendung:** Lädt und installiert Pakete aus einer URL zu einem Repository (z.B. GitHub). Es wird auch verwendet, um Abhängigkeiten zu aktualisieren.
+   - **Beispiel:** `go get -u github.com/user/repo`
+
+5. **go test**
+   - **Verwendung:** Führt Tests für das aktuelle Paket aus. Es identifiziert Testfunktionen (die mit `Test` beginnen) und führt sie aus.
+   - **Beispiel:** `go test` oder `go test ./...` (um Tests in allen Unterordnern auszuführen).
+
+6. **go fmt**
+   - **Verwendung:** Formatiert Go-Quellcode gemäß den Standardformatierungsrichtlinien von Go. Es ist üblich, dies vor dem Commit von Code in ein Repository auszuführen.
+   - **Beispiel:** `go fmt`
+
+7. **go doc**
+   - **Verwendung:** Zeigt Dokumentation für Go-Code. Es kann auf Paket-, Funktion- oder Symbolbasis verwendet werden.
+   - **Beispiel:** `go doc fmt.Println`
+
+8. **go mod**
+   - **Verwendung:** Ein Werkzeug zur Modulverwaltung in Go. Mit `go mod init` können Sie ein neues Modul initialisieren, und mit `go mod tidy` können Sie die Abhängigkeiten aufräumen.
+   - **Beispiel:** `go mod init mymodule`
+
+9. **go vet**
+   - **Verwendung:** Überprüft den Go-Code auf häufige Fehler. Es ist kein Ersatz für Linting-Werkzeuge, aber es fängt viele gängige Programmierfehler ab.
+   - **Beispiel:** `go vet`
+
+10. **go env**
+   - **Verwendung:** Zeigt Go-Umgebungsvariablen an.
+   - **Beispiel:** `go env`
+
+11. **go version**
+   - **Verwendung:** Zeigt die aktuell installierte Go-Version an.
+   - **Beispiel:** `go version`
+
+Zusammengefasst bietet das `go`-Werkzeug eine umfassende Sammlung von Befehlen, um sowohl die Entwicklung als auch die Verwaltung von Go-Projekten zu erleichtern. Es ist empfehlenswert, sich mit diesen Befehlen vertraut zu machen, um effizient mit Go arbeiten zu können.
