@@ -32,7 +32,7 @@ Die Beispiele sind untergliedert in:
 * likeEnum
 
 ## Error handling
-tbd
+Eines der herausragenden Merkmale von Go ist sein Ansatz zur Fehlerbehandlung, der sich von vielen anderen Programmiersprachen unterscheidet. Statt auf Ausnahmen (Exceptions) zu setzen, wie viele andere Sprachen, verwendet Go einen einzigartigen Ansatz, der sich auf Rückgabewerte konzentriert.
 
 ## Testing 
 tbd
