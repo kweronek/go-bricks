@@ -1,4 +1,4 @@
-# go-bricks
+# Programmierbausteine für Go
 Dieses Repository gibt ein Set von verschiedenen kleinen Go-Programmen. An diesen lassen sich leicht die Syntax und Funktionsweise von go-Sprachelementen erkennen. Darüber hinaus können die Beispiel as Templates eingesetzt werden.
 Die Beispiele sind untergliedert in:
 * Elementary
@@ -31,7 +31,7 @@ Die Beispiele sind untergliedert in:
 * iota       
 * likeEnum
 
-## Error handling
+# Error handling
 Eines der herausragenden Merkmale von Go ist sein Ansatz zur Fehlerbehandlung, der sich von vielen anderen Programmiersprachen unterscheidet. Statt auf Ausnahmen (Exceptions) zu setzen, wie viele andere Sprachen, verwendet Go einen einzigartigen Ansatz, der sich auf Rückgabewerte konzentriert.
 **Einführung in Fehlerbehandlung in Golang**
 
@@ -110,9 +110,9 @@ Durch solche benutzerdefinierten Fehlerstrukturen kann man zusätzliche Kontexti
 
 **7. Schlussfolgerung**
 
-Go's Ansatz zur Fehlerbehandlung unterscheidet sich deutlich von dem vieler anderer Sprachen. Durch die Förderung expliziter Fehlerüberprüfungen hilft Go Entwicklern, robusten, wartbaren und verständlichen Code zu schreiben. Fehler werden nicht leichtfertig übersehen, und Entwickler sind stets im Bilde über mögliche Problemstellen ihrer Anwendungen. Dieser Ansatz mag zunächst ungewöhnlich erscheinen, hat sich aber in der Praxis als effektiv und effizient erwiesen.
-## Testing 
-**Einführung in das Testing mit Go**
+Go's Ansatz zur Fehlerbehandlung unterscheidet sich deutlich von dem vieler anderer Sprachen. Durch die Förderung expliziter Fehlerüberprüfungen hilft Go Entwicklern, robusten, wartbaren und verständlichen Code zu schreiben. Fehler werden nicht leichtfertig übersehen, und Entwickler sind stets im Bilde über mögliche Problemstellen ihrer Anwendungen. Dieser Ansatz mag zunächst ungewöhnlich erscheinen, hat sich aber in der Praxis als effektiv und effizient erwiesen.  
+
+# Einführung in das Testing mit Go
 
 **1. Einleitung**
 
