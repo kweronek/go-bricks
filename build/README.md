@@ -1,8 +1,5 @@
 # Wie baue ich Software mit go
-## go run
-## go build
-## go install
-## go mod
+
 # Ausführbare Programme mit Go erzeugen
 
 Hier sind die gängigsten Varianten, mit Go ein **ausführbares Programm** zu erzeugen – jeweils kurz erklärt und mit einem Mini-Beispiel.
